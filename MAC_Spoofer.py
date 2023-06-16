@@ -1,11 +1,11 @@
 import subprocess
 
 def change_mac(interface, new_mac):
-    print("[+] Cambiando Dirección MAC para " + interface + " to " + new_mac)
+    print("[+] Changing MAC address for " + interface + " to " + new_mac)
     
 
 interface = input("interface > ")
-new_mac = input("nuevo MAC > ") 
+new_mac = input("new MAC > ") 
 
 
 subprocess.call(["ifconfig", interface, "down"])
